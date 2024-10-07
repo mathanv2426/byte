@@ -1,0 +1,551 @@
+/* font */
+@font-face {
+    font-family: myfont;
+    src: url(Pinky\ Blues.otf);
+}
+@font-face {
+    font-family: subhead;
+    src: url(Milk\ Cream.otf);
+}
+@font-face{
+    font-family: para;
+    src: url(StefansUhr.ttf);
+}
+*{
+    margin:0px;
+
+}
+/* first */
+.ccbitback{
+  background-image:linear-gradient(-45deg,rgba(245,246,252,0) 10%,#caa5ff 90%), url("cbit.jpg");
+  background-size: cover;
+   height: 540px;
+   padding-left: 100px;
+   padding-right: 100px;
+   padding-top: 50px;
+   
+}
+.ccbitback h1{
+  color: rgb(56, 3, 68);
+  
+}
+.ccbitback h3{
+  color: white;
+}
+.ccbitback p{
+  text-align: justify;
+  color:rgb(49, 1, 94);
+  font-size: 17px;
+  margin-right: 500px;
+
+}
+/* intrested box */
+.cbitintro{
+  backdrop-filter: blur(8px);
+  float: right;
+  margin-top: -450px;
+  height: 300px;
+  width: 250px;
+  margin-right: 150px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.cbitintro input{
+margin-top: 50px;
+margin-left: 40px;
+border: none;
+border-bottom: 3px solid rgba(1, 0, 0, 0.1);
+background: transparent;
+color:white;
+}
+.cbitintro input:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(37, 0, 71);
+    transition: all ease .15s;
+    width: 70%;
+    transition: all ease-in-out .55s;
+}
+::placeholder{
+color:white;
+font-size: 15px;
+font-family: para;
+margin-bottom: 30px;
+}
+.cbitintro button{
+margin-top: 50px;
+margin-right: 70px;
+float:right;
+font-family: para;
+}
+/* about */
+.ccbit{
+margin-left: 150px;
+margin-right: 110px;      
+margin-top: 10px;
+}
+/* why choose us */
+.whyus{
+background-color: black;
+margin-top: 80px;
+height: 600px;
+}
+#first{
+margin-left: 150px;
+border-top: 1px solid gray;width: 270px;
+height: 120px;
+margin-top: 50px; 
+cursor: pointer;
+background: linear-gradient(to top,indigo,black 40%);
+border-radius: 10px;
+}
+#sec{
+margin-left: 475px;
+border-top: 1px solid gray;
+width: 270px;
+height: 120px;
+margin-top: -121px;
+cursor: pointer;
+background: linear-gradient(to top,indigo,black 40%);
+border-radius: 10px;
+}
+#thrd{
+margin-left: 800px;
+border-top: 1px solid gray;
+width: 270px;
+height: 120px;
+margin-top: -121px;
+cursor: pointer;
+background: linear-gradient(to top,indigo,black 40%);
+border-radius: 10px;
+}
+#four{
+margin-left: 150px;
+border-top: 1px solid gray;
+width: 270px;
+height: 120px;
+margin-top: 50px;
+cursor: pointer;
+border-radius: 10px;
+background: linear-gradient(to top,indigo,black 40%);
+}
+#five{
+margin-left: 475px;
+border-top: 1px solid gray;
+width: 270px;
+height: 120px;
+margin-top: -121px;
+cursor: pointer;
+border-radius: 10px;
+background: linear-gradient(to top,indigo,black 40%);
+}
+#six{
+margin-left: 800px;
+border-top: 1px solid gray;
+width: 270px;
+height: 120px;
+margin-top: -121px;
+cursor: pointer;
+border-radius: 10px;
+background: linear-gradient(to top,indigo,black 40%);
+}
+/* enroll button why us */
+.enroll button{
+font-family: para;
+margin-top: 50px;
+margin-left: 550px;
+}
+/* common */
+h1,h2{
+color: indigo;
+ font-family: subhead;
+ text-transform: uppercase;
+ margin-top: 15px;
+ margin-bottom: 15px;
+}
+h3{
+margin-top: 10px;
+margin-bottom: 10px;
+color: purple;
+}
+p,li{
+    /* font-size: 17px;
+    line-height: 30px; */
+    /* text-align: justify; */
+font-family: para;
+}
+button{
+float: left;
+padding: 10px;
+width: 120px;
+border-radius: 40px;
+background-color: magenta;
+margin-top: 0px;
+margin-left: 480px;
+text-align: center;
+color: white;
+font-size: 15px;
+font-family: myfont;
+box-shadow: 5px red;
+border: none;
+cursor: pointer;
+touch-action: manipulation;
+vertical-align: baseline;
+background-image: linear-gradient(plum,indigo 40%);
+text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,
+rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;
+}
+/* course structure */
+.gdstruct1{
+margin-left: 150px;
+width: 480px;
+margin-top: 30px;
+}
+.gdstruct1 h2{
+    padding-bottom: 20px;
+}
+/* mod1 */
+#mod1{
+    border: 1px solid;
+    width: 450px;
+    background: #dbc1ff;
+}
+#mod1 label{
+    font-family: para;
+    font-weight: bold;
+}
+span {
+    padding : 20px;
+    background : rgb(58, 21, 93); 
+    color : white;
+    font-size : 1.2em;
+    font-variant : small-caps;
+    cursor : pointer;
+    display: block;
+}
+span::after {
+    float: right;
+    right: 10%;
+    content: "🢗";
+}
+.slide{
+    overflow: hidden;
+    transition: height .4s ease;
+    height: 0px;
+}
+.slide li {
+    padding: 5px;
+    text-decoration: 5px;
+}
+#touch1 {
+    opacity: 0;
+    height: 0px;
+}    
+#touch1:checked + .slide {
+    height: 35px;
+    transition: ease-in 0.55s;
+} 
+/* mod2 */
+#mod2{
+    border: 1px solid;
+    width: 450px;
+    background: #dbc1ff;
+    margin-top: 30px; 
+}
+#mod2 label{
+    font-family: para;
+    font-weight: bold;
+}
+#touch2 {
+    opacity: 0;
+     height: 0px;
+}    
+#touch2:checked + .slide {
+   height: 35px;
+   transition: ease-in 0.55s;
+} 
+/* mod3 */
+#mod3{
+    border: 1px solid;
+    width: 450px;
+    background: #dbc1ff;
+    margin-top: 30px; 
+}
+#mod3 label{
+    font-family: para;
+    font-weight: bold;
+}
+#touch3 {
+    opacity: 0;
+    height: 0px;
+}    
+#touch3:checked + .slide {
+   height: 35px;
+   transition: ease-in 0.55s;
+} 
+/* mod4 */
+#mod4{
+    width: 450px;
+    background: #dbc1ff;
+    margin-top: 30px; 
+    border: 1px solid;
+}
+#mod4 label{
+    font-family: para;
+    font-weight: bold;
+}
+#touch4 {
+    opacity: 0;
+    height: 0px;
+}    
+#touch4:checked + .slide {
+   height: 35px;
+   transition: ease-in 0.55s;
+   #touch4:hover{
+    height: 0px;
+   }
+} 
+#mod5{
+    border: 1px solid;
+    width: 450px;
+    background: #dbc1ff;
+    margin-top: 30px; 
+}
+#mod5 label{
+    font-family: para;
+    font-weight: bold;
+}
+#touch5 {
+    opacity: 0;
+     height: 0px;
+}    
+#touch5:checked + .slide {
+   height: 35px;
+   transition: ease-in 0.55s;
+} 
+/* gdstruct2 */
+.gdstruct2{
+    margin-right: 150px;
+    width: 450px;
+    float: right; 
+}
+#mod6{
+    border: 1px solid;
+    width: 450px;
+    background: #dbc1ff;
+    margin-top: -533px; 
+    
+}
+#mod6 label{
+    font-family: para;
+    font-weight: bold;
+}
+span {
+    padding : 20px;
+    background : rgb(58, 21, 93); 
+    color : white;
+    font-size : 1.2em;
+    font-variant : small-caps;
+    cursor : pointer;
+    display: block;
+}
+span::after {
+    float: right;
+    right: 10%;
+    content: "🢗";
+}
+.slide1{
+    overflow: hidden;
+    transition: height .4s ease;
+    height: 0px;
+}
+.slide1 li {
+    padding: 5px;
+    text-decoration: 5px;
+}
+#touch6 {
+    opacity: 0;
+    height: 0px;
+}    
+#touch6:checked + .slide1 {
+   height: 55px;
+   transition: ease-in 0.55s;
+} 
+#mod7{
+    border: 1px solid;
+    width: 450px;
+    background: #dbc1ff;
+    margin-top: 30px;
+}
+#mod7 label{
+    font-family: para;
+    font-weight: bold;
+}
+#touch7 {
+    opacity: 0;
+    height: 0px;
+}    
+#touch7:checked + .slide1 {
+   height: 35px;
+   transition: ease-in 0.55s;
+} 
+#mod8{
+    border: 1px solid;
+    width: 450px;
+    background: #dbc1ff;
+    margin-top: 30px; 
+}
+#mod8 label{
+    font-family: para;
+    font-weight: bold;
+}
+#touch8 {
+    opacity: 0;
+    height: 0px;
+}    
+#touch8:checked + .slide1 {
+   height: 35px;
+   transition: ease-in 0.55s;
+} 
+#mod9{
+    border: 1px solid;
+    width: 450px;
+    background: #dbc1ff;
+    margin-top: 30px; 
+}
+#mod9 label{
+    font-family: para;
+    font-weight: bold;
+}
+#touch9 {
+    opacity: 0;
+    height: 0px;
+}    
+#touch9:checked + .slide1 {
+   height: 35px;
+   transition: ease-in 0.55s;
+} 
+#mod10{
+    border: 1px solid;
+    width: 450px;
+    background: #dbc1ff;
+    margin-top: 30px; 
+}
+#mod10 label{
+    font-family: para;
+    font-weight: bold;
+}
+#touch10 {
+    opacity: 0;
+    height: 0px;
+}    
+#touch10:checked + .slide1 {
+   height: 50px;
+   transition: ease-in 0.55s;
+} 
+/* register btn */
+.register{
+    margin-top: 50px;
+    background: url("ba.jpg");
+    height: 290px;
+    background-size: cover;
+    padding-top:50px;
+    font-family: para;
+}
+.register button{
+    margin-top: 30px;
+    margin-left: 570px;
+    padding: 15px;
+    background: linear-gradient(white ,rgb(117, 27, 108)20%);
+    box-shadow: 5px 5px 14px plum;
+}
+/* companies */
+.companies{
+    margin: 50px;
+    
+}
+/* contact us */
+.overall{
+background-color: darkorchid;
+height: 450px;
+margin-top: 100px;
+}
+.line{
+width: 55px;
+height: 0px;
+color: white;
+border: 1px solid white;
+margin-top: 170px;
+margin-left: -155px;
+margin-bottom: 20px;
+}
+.overall img{
+margin-top: 50px;
+margin-left: 50px;
+}
+.overall1{
+display: flex;
+margin-left: 550px;
+margin-top: -530px;
+color: white;
+line-height: 50px;
+}
+.overall1 h3{
+color: white;
+float: right;
+margin-right: 100px;
+margin-top:125px;
+}
+.overall1 a{
+margin-top: 120px;
+margin-left: -100px;
+padding-top: 50px;
+padding-top: 30px;
+padding: 30px;
+font-size: 17px;
+text-decoration: none;
+color: white;
+line-height: 100px;
+}
+.overall2{
+color: white;
+margin-left: 700px;
+margin-top: -350px;
+}
+.overall2 h3{
+color: white;
+float: right;
+margin-right: 470px;
+margin-top:-30px;
+display: flex;
+}
+.overall2 p{
+margin-left: 40px;
+margin-top: -35px;
+line-height: 25px;
+font-size: 15px;
+padding-top: 10px;
+}
+.overall3{
+float: right;
+}
+.overall3 h3{
+color: white;
+float: right;
+margin-right: 140px;
+margin-top:-250px;
+
+}
+.overall3 p{
+color: white;
+float: right;
+font-size: 10px;
+margin-top: -235px;
+padding: 50px;
+text-align: justify;
+margin-left: 100px;
+align-items: right;
+}
+/* .overall p{
+font-size: 10px;
+line-height: 10px;
+} */
