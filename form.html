@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>BYTE</title>
+    <link rel="icon" type="image/x-icon" href="titlebar.png" id="top">
+    <style>
+        /* new fonts */
+        @font-face {
+            font-family: myfont;
+            src: url(Pinky\ Blues.otf);
+        }
+        @font-face {
+            font-family: subhead;
+            src: url(Milk\ Cream.otf);
+        }
+        @font-face{
+            font-family: para;
+            src: url(StefansUhr.ttf);
+        }
+
+        /* title image */
+        .immg img{
+            display: flex;
+            margin-left: 330px;
+            width:600px;
+            border-radius: 50px;
+        }
+
+        /* intro */
+        .headerr{
+            border: 1px solid gainsboro;
+            height: 240px;
+            width: 600px;
+            margin-left: 330px;
+            border-radius: 20px;
+            margin-top: 10px;
+            border-top-color: purple;
+            border-top-width:15px ;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1) ;
+        }
+        .headerr h2{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 45px;
+            font-size: 30px;
+        }
+        .headerr h3{
+            font-family: subhead;
+            margin-left: 100px;
+            font-size: 20px;
+        }
+        .headerr p{
+            font-family: para;
+            font-size: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-weight: bold;
+            text-align: justify;
+            word-spacing: 2px;
+            line-height: 20px;
+        }
+
+        /* title qus and star */
+        span{
+            color: red;
+        }
+        h4{
+            padding-left: 30px;
+            padding-top: 30px;
+            font-family: para;
+           color: purple;
+        }
+
+        /* name */
+        .name{
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1) ;
+            height: 140px;
+            width: 600px;
+            margin-left: 330px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        input[type=text]{
+            margin-top: 7px;
+            margin-left: 30px;
+            border: none;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            width: 300px;
+            background-color: transparent;
+            font-family: para;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        input[type=text]:focus{
+            outline: none;
+            border-bottom: 3px solid purple;
+            transition: all ease .15s;
+            width: 50%;
+        }
+        .name:hover{
+            ::placeholder{
+                font-size: 17px;
+                transition: all ease-in-out .15s;
+            }
+        }
+
+        /* dob */
+        .dob{
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1) ;
+            height: 140px;
+            width: 600px;
+            margin-left: 330px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        input[type=date]{
+            margin-top: 7px;
+            margin-left: 30px;
+            border: none;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            width: 200px;
+            background-color: transparent;
+            font-family: para;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        input[type=date]:focus{
+            outline: none;
+            border-bottom: 3px solid purple;
+            transition: all ease .15s;
+            width: 200px;
+        }
+
+        /* gender */
+        .gender{
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1) ;
+            height: 165px;
+            width: 600px;
+            margin-left: 330px;
+            border-radius: 20px;
+            margin-top: 10px;
+            line-height: 23px;
+        }
+        input[type=radio]{
+          margin-left: 30px;
+          line-height: 30px;
+        }
+        input[type=radio]:hover{
+            color:purple;
+            font-size: 18px;
+            transition: all ease-in .2s;
+            cursor: pointer;
+            background-color: purple;
+            border-color: transparent;
+            transform: scale(0.8);
+            box-shadow: 0 0 20px purple;
+        }
+        .gender label{
+            margin-left: 5px;
+            font-family: para;
+            cursor:pointer;
+        }
+        input[type=radio]:checked + .gender label {
+            transition: all ease-in .15s;
+            color: purple;
+        }
+
+        /* phone */
+        .phn{
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1) ;
+            height: 140px;
+            width: 600px;
+            margin-left: 330px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        input[type=tel]{
+            margin-top: 7px;
+            margin-left: 30px;
+            border: none;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            width: 300px;
+            background-color: transparent;
+            font-family: para;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        input[type=tel]:focus{
+            outline: none;
+            border-bottom: 3px solid purple;
+            transition: all ease .15s;
+            width: 50%;
+        }
+        .phn:hover{
+            ::placeholder{
+                font-size: 17px;
+                transition: all ease-in-out .15s;
+            }
+        }
+        /* email */
+        .email{
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1) ;
+            height: 140px;
+            width: 600px;
+            margin-left: 330px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        input[type=email]{
+            margin-top: 7px;
+            margin-left: 30px;
+            border: none;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            width: 300px;
+            background-color: transparent;
+            font-family: para;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        input[type=email]:focus{
+            outline: none;
+            border-bottom: 3px solid purple;
+            transition: all ease-in .15s;
+            width: 50%;
+        }
+        .email:hover{
+            ::placeholder{
+                font-size: 17px;
+                transition: all ease-in-out .15s;
+            }
+        }
+        /* address */
+        .address{
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1) ;
+            height: 140px;
+            width: 600px;
+            margin-left: 330px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        .address:hover{
+            ::placeholder{
+                font-size: 17px;
+                transition: all ease-in-out .15s;
+            }
+        }
+        /* status */
+        .status{
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1) ;
+            height: 165px;
+            width: 600px;
+            margin-left: 330px;
+            border-radius: 20px;
+            margin-top: 10px;
+            line-height: 23px;
+        }
+        .status label{
+            margin-left: 5px;
+            font-family: para;
+            cursor:pointer;
+        }
+        input[type=radio]:checked + .gender label {
+            transition: all ease-in .15s;
+            color: purple;
+        }
+        /* study */
+        .study{
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1) ;
+            height: 140px;
+            width: 600px;
+            margin-left: 330px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        .study:hover{
+            ::placeholder{
+                font-size: 17px;
+                transition: all ease-in-out .15s;
+            }
+        }
+       
+        /* course */
+        .course{
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1) ;
+            height: 340px;
+            width: 600px;
+            margin-left: 330px;
+            border-radius: 20px;
+            margin-top: 10px;
+            line-height: 23px;
+        }
+        .course label{
+            margin-left: 5px;
+            font-family: para;
+            cursor:pointer;
+        }
+        input[type=radio]:checked + .course label {
+            transition: all ease-in .15s;
+            color: purple;
+        }
+        .course:hover{
+            ::placeholder{
+                font-size: 17px;
+                transition: all ease-in-out .15s;
+            }
+        }
+        /* terms */
+        .terms{
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1) ;
+            height: 140px;
+            width: 600px;
+            margin-left: 330px;
+            border-radius: 20px;
+            margin-top: 10px;
+            line-height: 23px;
+        }
+        .terms label{
+            margin-left: 5px;
+            font-family: para;
+            cursor:pointer;
+        }
+        input[type=checkbox]:checked + .terms label {
+            transition: all ease-in .15s;
+            color: purple;
+        }
+        .terms:hover{
+            ::placeholder{
+                font-size: 17px;
+                transition: all ease-in-out .15s;
+            }
+        }
+        input[type=checkbox]{
+          margin-left: 30px;
+          line-height: 90px;
+        }
+        .terms a{
+            color:blueviolet ;
+            display: flex;
+            margin-top: -50px;
+            margin-left: 520px;
+        }
+        /* button */
+         input[type=submit]{
+          margin-left: 330px;
+          margin-top: 20px;
+          background-color: blueviolet;
+          box-shadow: 5px orchid;
+          border: transparent;
+          width:100px;
+          height: 30px;
+          color: white;
+          font-family: subhead;
+          border-radius: 5px;
+        }
+        input[type=reset]{
+            margin-left: 450px;
+            border: none;
+            background-color: white;
+            color: blueviolet;
+            font-weight: bolder;
+            font-size: 18px;
+        }
+        /* COPYRIGHT */
+        .copyright{
+            margin-left: 440px;
+            margin-top: 80px;
+        }
+        .copyright p{
+            font-size: 25px;
+            color: gray;
+        }
+        .copyright span{
+            color: gray;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- title img -->
+
+    <div class="immg">
+        <img src="title.png" alt="title" >
+    </div>
+
+    <!-- title -->
+
+    <div class="headerr">
+        <h2>BYTE INSTITUTE - TRANINING (BIT)</h2>
+        <h3>STUDENT MEMBERSHIP APPLICATION FORM</h3>
+        <p>Welcome to the BYTE INSTITUTE Student Membership Program! join us at Byte Institute and embark on a learning journey where we turn errors into opportunities for growth and build a strong foundation for your coding future.</p>
+    </div>
+
+    <!-- name -->
+    <form action="hii" method="post">
+    <div class="name">
+        <h4>Full Name<span> *</span></h4><br>
+        <input type="text" name="fullname" placeholder="Your answer">
+    </div>
+
+    <!-- dob -->
+    
+    <div class="dob">
+        <h4>Date of Birth<span> *</span></h4><br>
+        <input type="date" name="dob">
+    </div>
+
+    <!-- gender -->
+
+    <div class="gender">
+        <h4>Gender<span> *</span></h4>
+        <input type="radio" name="gender" value="Female" id="Fm"><label for="Fm">Female</label><br>
+        <input type="radio" name="gender" value="male"  id="ma"><label for="ma">Male</label><br>
+        <input type="radio" name="gender" value="others"  id="ot"><label for="ot">Others</label>
+    </div>
+
+    <!-- phone -->
+
+    <div class="phn">
+        <h4>Phone Number<span> *</span></h4><br>
+        <input type="tel" name="phn" placeholder="Your answer">
+    </div>
+
+    <!-- email -->
+
+    <div class="email">
+        <h4>E-mail<span> *</span></h4><br>
+        <input type="email" name="mail" placeholder="Your answer">
+    </div>
+
+    <!-- address -->
+
+    <div class="address">
+        <h4>Current Address<span> *</span></h4><br>
+        <input type="text" name="address" placeholder="Your answer">
+    </div>
+
+    <!-- status -->
+    <div class="status">
+        <h4>Status<span> *</span></h4>
+        <input type="radio" name="status" value="Student" id="stu"><label for="stu">Student</label><br>
+        <input type="radio" name="status" value="Fresher" id="fr"><label for="fr">Fresher</label><br>
+        <input type="radio" name="status" value="Others" id="ott"><label for="ott">Others</label>
+    </div>
+
+    <!-- study -->
+
+    <div class="study">
+        <h4>School / College Name<span> *</span></h4><br>
+        <input type="text" name="study" placeholder="Your answer">
+    </div>
+
+    <!-- course -->
+    
+    <div class="course">
+        <h4>Course<span> *</span></h4>
+        <input type="radio" name="course" value="java" id="java"><label for="java">Java Full Stack</label><br>
+        <input type="radio" name="course" value="mern" id="mern"><label for="mern">MERN Full Stack</label><br>
+        <input type="radio" name="course" value="python" id="pyt"><label for="pyt">Python Full Stack</label><br>
+        <input type="radio" name="course" value="AI" id="ai"><label for="ai">Artificial Intelligence</label><br>
+        <input type="radio" name="course" value="ML" id="ml"><label for="ml">Machine Learning</label><br>
+        <input type="radio" name="course" value="devops" id="dev"><label for="dev">DevOps</label><br>
+        <input type="radio" name="course" value="graphic design" id="gd"><label for="gd">Graphic Designer</label><br>
+        <input type="radio" name="course" value="uiux" id="uiux"><label for="uiux">UI UX</label><br>
+        <input type="radio" name="course" value="aws" id="aws"><label for="aws">AWS</label><br>
+    </div>
+    <div class="terms">
+        <h4>Terms & Condition<span> *</span></h4>
+        <a href="terms.html">Details</a><br>
+        <input type="checkbox" name="terms" value="agree" id="terms"><label for="terms">I Agree</label><br>
+    </div>
+    
+          <input type="submit" value="SUBMIT" >
+        <input type="reset">
+    </div>
+    <div class="copyright">
+        <p>&copy;<span>   BYTE INSTITUTE-TRANINING (BIT)</span></p>
+    </div>
+    </form>
+</body>
+</html>
