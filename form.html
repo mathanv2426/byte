@@ -280,21 +280,7 @@
                 transition: all ease-in-out .15s;
             }
         }
-        /* degree */
-        .degree{
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1) ;
-            height: 140px;
-            width: 600px;
-            margin-left: 330px;
-            border-radius: 20px;
-            margin-top: 10px;
-        }
-        .degree:hover{
-            ::placeholder{
-                font-size: 17px;
-                transition: all ease-in-out .15s;
-            }
-        }
+       
         /* course */
         .course{
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1) ;
@@ -408,7 +394,7 @@
     </div>
 
     <!-- name -->
-    <form action="details.html" method="post">
+    <form action="hii" method="post">
     <div class="name">
         <h4>Full Name<span> *</span></h4><br>
         <input type="text" name="fullname" placeholder="Your answer">
@@ -425,9 +411,9 @@
 
     <div class="gender">
         <h4>Gender<span> *</span></h4>
-        <input type="radio" name="gender" id="Fm"><label for="Fm">Female</label><br>
-        <input type="radio" name="gender" id="ma"><label for="ma">Male</label><br>
-        <input type="radio" name="gender" id="ot"><label for="ot">Others</label>
+        <input type="radio" name="gender" value="Female" id="Fm"><label for="Fm">Female</label><br>
+        <input type="radio" name="gender" value="male"  id="ma"><label for="ma">Male</label><br>
+        <input type="radio" name="gender" value="others"  id="ot"><label for="ot">Others</label>
     </div>
 
     <!-- phone -->
@@ -454,9 +440,9 @@
     <!-- status -->
     <div class="status">
         <h4>Status<span> *</span></h4>
-        <input type="radio" name="status" id="stu"><label for="stu">Student</label><br>
-        <input type="radio" name="status" id="fr"><label for="fr">Fresher</label><br>
-        <input type="radio" name="status" id="ott"><label for="ott">Others</label>
+        <input type="radio" name="status" value="Student" id="stu"><label for="stu">Student</label><br>
+        <input type="radio" name="status" value="Fresher" id="fr"><label for="fr">Fresher</label><br>
+        <input type="radio" name="status" value="Others" id="ott"><label for="ott">Others</label>
     </div>
 
     <!-- study -->
@@ -466,29 +452,24 @@
         <input type="text" name="study" placeholder="Your answer">
     </div>
 
-    <!-- degree -->
-
-    <div class="degree">
-        <h4>Degree<span> *</span></h4><br>
-        <input type="text" name="deg" placeholder="Your answer">
-    </div>
+    <!-- course -->
+    
     <div class="course">
         <h4>Course<span> *</span></h4>
-        <input type="radio" name="course" id="java"><label for="java">Java Full Stack</label><br>
-        <input type="radio" name="course" id="mern"><label for="mern">MERN Full Stack</label><br>
-        <input type="radio" name="course" id="pyt"><label for="pyt">Python Full Stack</label><br>
-        <input type="radio" name="course" id="ai"><label for="ai">Artificial Intelligence</label><br>
-        <input type="radio" name="course" id="ml"><label for="ml">Machine Learning</label><br>
-        <input type="radio" name="course" id="dev"><label for="dev">DevOps</label><br>
-        <input type="radio" name="course" id="gd"><label for="gd">Graphic Designer</label><br>
-        <input type="radio" name="course" id="uiux"><label for="uiux">UI UX</label><br>
-        <input type="radio" name="course" id="aws"><label for="aws">AWS</label><br>
-        <input type="text" name="course" placeholder="Others">
+        <input type="radio" name="course" value="java" id="java"><label for="java">Java Full Stack</label><br>
+        <input type="radio" name="course" value="mern" id="mern"><label for="mern">MERN Full Stack</label><br>
+        <input type="radio" name="course" value="python" id="pyt"><label for="pyt">Python Full Stack</label><br>
+        <input type="radio" name="course" value="AI" id="ai"><label for="ai">Artificial Intelligence</label><br>
+        <input type="radio" name="course" value="ML" id="ml"><label for="ml">Machine Learning</label><br>
+        <input type="radio" name="course" value="devops" id="dev"><label for="dev">DevOps</label><br>
+        <input type="radio" name="course" value="graphic design" id="gd"><label for="gd">Graphic Designer</label><br>
+        <input type="radio" name="course" value="uiux" id="uiux"><label for="uiux">UI UX</label><br>
+        <input type="radio" name="course" value="aws" id="aws"><label for="aws">AWS</label><br>
     </div>
     <div class="terms">
         <h4>Terms & Condition<span> *</span></h4>
         <a href="terms.html">Details</a><br>
-        <input type="checkbox" name="terms" id="terms"><label for="terms">I Agree</label><br>
+        <input type="checkbox" name="terms" value="agree" id="terms"><label for="terms">I Agree</label><br>
     </div>
     
           <input type="submit" value="SUBMIT" >
